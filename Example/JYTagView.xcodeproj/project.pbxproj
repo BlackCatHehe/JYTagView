@@ -42,10 +42,10 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		77F3E8F29C0048DCBE783FB3 /* Pods-JYTagView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYTagView_Example.release.xcconfig"; path = "Target Support Files/Pods-JYTagView_Example/Pods-JYTagView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		8FF4DB185EE5C569202187B0 /* Pods-JYTagView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYTagView_Tests.release.xcconfig"; path = "Target Support Files/Pods-JYTagView_Tests/Pods-JYTagView_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		A6315206CABE0D000E726917 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		A6315206CABE0D000E726917 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		C299EFDD28029519B8BA9D26 /* Pods-JYTagView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYTagView_Tests.debug.xcconfig"; path = "Target Support Files/Pods-JYTagView_Tests/Pods-JYTagView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		CA033E491E0444A86ED26C67 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		D255249B330455C97DC7F5BD /* JYTagView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = JYTagView.podspec; path = ../JYTagView.podspec; sourceTree = "<group>"; };
+		CA033E491E0444A86ED26C67 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		D255249B330455C97DC7F5BD /* JYTagView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JYTagView.podspec; path = ../JYTagView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F34651F5E1F79321EA055C49 /* Pods-JYTagView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYTagView_Example.debug.xcconfig"; path = "Target Support Files/Pods-JYTagView_Example/Pods-JYTagView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,7 +77,6 @@
 				C299EFDD28029519B8BA9D26 /* Pods-JYTagView_Tests.debug.xcconfig */,
 				8FF4DB185EE5C569202187B0 /* Pods-JYTagView_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -214,10 +213,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = N495UC66AV;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = N495UC66AV;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -228,6 +229,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -311,10 +313,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-JYTagView_Example/Pods-JYTagView_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/JYTagView/JYTagView.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JYTagView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -438,7 +442,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -484,7 +488,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -497,6 +501,7 @@
 			baseConfigurationReference = F34651F5E1F79321EA055C49 /* Pods-JYTagView_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = N495UC66AV;
 				INFOPLIST_FILE = JYTagView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -512,6 +517,7 @@
 			baseConfigurationReference = 77F3E8F29C0048DCBE783FB3 /* Pods-JYTagView_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = N495UC66AV;
 				INFOPLIST_FILE = JYTagView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -526,6 +532,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C299EFDD28029519B8BA9D26 /* Pods-JYTagView_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = N495UC66AV;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -548,6 +555,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8FF4DB185EE5C569202187B0 /* Pods-JYTagView_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = N495UC66AV;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",

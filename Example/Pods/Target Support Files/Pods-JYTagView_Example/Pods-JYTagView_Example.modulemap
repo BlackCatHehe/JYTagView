@@ -1,0 +1,6 @@
+framework module Pods_JYTagView_Example {
+  umbrella header "Pods-JYTagView_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

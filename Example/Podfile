@@ -2,10 +2,11 @@ use_frameworks!
 
 target 'JYTagView_Example' do
   pod 'JYTagView', :path => '../'
-
+  pod 'SnapKit', '~> 4.2.0'
   target 'JYTagView_Tests' do
     inherit! :search_paths
 
+    
     pod 'FBSnapshotTestCase' , '~> 2.1.4'
   end
 end

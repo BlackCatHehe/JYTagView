@@ -22,7 +22,7 @@ pod 'JYTagView'
 
 ## Author
 
-462497072@qq.com, 462497072@qq.com
+BlackCatHehe, 462497072@qq.com
 
 ## License
 

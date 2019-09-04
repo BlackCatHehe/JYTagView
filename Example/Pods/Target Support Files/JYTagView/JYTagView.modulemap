@@ -1,0 +1,6 @@
+framework module JYTagView {
+  umbrella header "JYTagView-umbrella.h"
+
+  export *
+  module * { export * }
+}
